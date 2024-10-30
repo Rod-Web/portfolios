@@ -88,22 +88,16 @@ header li:hover {
 #sobre img {
     margin: 20px;
     border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 10px white;
 }
 
 #sobre h1 {
     color: white;
     font-size: 35px;
     text-align: center;
-}
-
-main p {
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    text-indent: 10px;
-    font-size: 30px;
-    text-align: justify;
 }
 
 .div1 {
