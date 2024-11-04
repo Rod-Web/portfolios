@@ -137,6 +137,19 @@ header li:hover {
     .div2 a {
         text-align: center;
     }
+    
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza a imagem horizontalmente */
+        text-align: center; /* Centraliza o texto na coluna */
+    }
+
+    .div1 img {
+        height: 150px; /* Ajusta o tamanho da imagem */
+        width: 150px;
+        margin: 0 auto; /* Garante que a imagem esteja centralizada */
+    }
 }
 .div2 a:hover {
     transform: scale(0.95);
