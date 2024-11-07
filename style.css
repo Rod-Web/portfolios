@@ -1,83 +1,55 @@
 * {
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
-
 body {
     background-color: black;
-    color: white;
-}
-
-header {
-    box-shadow: 0px 0px 10px #fff;; /* Define o contorno do texto */
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
-    padding: 10px;
+    flex-direction: column;
+    gap: 40px;
 }
 
-
-.logo img {
-    height: 75px;
-    padding-left: 10px;
-}
-
-.logo h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-}
-
-header ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-}
-
-header li {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    font-size: 170%;
-    list-style: none;
-    padding: 10px;
-    transition: 0.5s;
-    border-radius: 25px;
-
-}
-
-header li:hover {
-    transform: scale(0.99);
-    color: gold;
-}
-
-#sobre {
-    background-image:url(https://th.bing.com/th/id/R.29c3a1cf578d36b52bb0e5d6e75a12be?rik=ogrUmqBZBz6ovA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f3D70Lvg.png&ehk=UG0gWwpkHvO%2bZYuTLABVQhiPCFvkgFkMraj%2fvgIZlNM%3d&risl=&pid=ImgRaw&r=0);
+.container1 {
+    padding: 19%;
+    height: 24vh;
+    background-image: url(https://img.freepik.com/fotos-premium/fundo-preto-texturizado_926199-8526.jpg);
     background-size: cover;
-    padding: 10px;
-    padding-bottom: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px white;
+    box-shadow: 0 0 10px white;
 }
-
-#sobre h1 {
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     color: white;
-    font-size: 35px;
     text-align: center;
+    font-size: 40px;
+}
+.container1 p {
+    padding-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
 }
 
-.div1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.container2 {
+    padding: 7%;
+    background-image: url(https://image.freepik.com/fotos-gratis/plano-de-fundo-texturizado-preto_24972-611.jpg);
+    background-size: cover;
+    box-shadow: 0 0 0px white;
+}
+
+.text-sobre {
+    margin-top: 10px;
+    padding: 5%;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-sobre p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
 }
 
 .div2 {
@@ -85,15 +57,6 @@ header li:hover {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding-left: 15px;
-}
-
-.div2 h1{
-    font-family :Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 0 0 20px black;
-    color: #ffff;
-    font-size: 22px;
-    padding: 15px;
 }
 
 .div2 a{
@@ -102,71 +65,45 @@ header li:hover {
     color: white;
     transition: 0.5s;
     margin-bottom: 5px;
-    padding-left: 15px;
 }
 
 @media screen and (max-width: 600px) {
-    .navbar {
-        display: none;
-    }
     .div2 a {
         text-align: center;
     }
-    
-    .div1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centraliza a imagem horizontalmente */
-        text-align: center; /* Centraliza o texto na coluna */
-    }
-
-    .div1 img {
-        height: 150px; /* Ajusta o tamanho da imagem */
-        width: 150px;
-        margin: 0 auto; /* Garante que a imagem esteja centralizada */
-    }
 }
 .div2 a:hover {
-    color: gold;
     transform: scale(0.95);
 }
 
-#projetos {
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px white;
+.container3 {
+    padding: 7%;
+    background-color: rgb(90, 90, 88);
+    background-size: cover;
+    box-shadow: 0 0 10px white;
 }
 
-.titulo-projetos {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
-    text-decoration: underline;
-    text-shadow: 1px 1px 10px black;
-}
-
-.container { 
-    display: flex; /* Exibe os cards em linha usando Flexbox */
-    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas */
-    padding: 10px; /* Espaçamento interno do Container */
-    margin-top: 20px; /* Espaçamento superior do Container */
-    gap: 20px; /* Espaçamento entre os cards */
-    justify-content: center; /* Centraliza os cards horizontalmente */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .card { 
-    border-radius: 10px; /* Arredonda os cantos dos cards */
-    padding: 5px; /* Espaçamento interno dos cards */
-    background-color: #181717; /* Fundo dos cards */
-    transition: 0.8s; /* Efeito de transição ao passar o mouse */
-    max-width: 160px;
+    max-width: 170px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #333333;
+    transition: 0.8s;
     text-align: center;
 }
 
 .card:hover { 
-    box-shadow: 0 0 10px gold;
-    transform: scale(0.97); /* Reduz o tamanho do card ao passar o mouse */
+    box-shadow: 0px 0px 20px white;
+    transform: scale(0.97);
 }
 
 .card a {
@@ -174,20 +111,20 @@ header li:hover {
 }
 
 .card img { 
-    border-radius: 10px; /* Arredonda os cantos da imagem */
-    width: 150px; /* Tamanho da largura da imagem */
-    height: 150px; /* Tamanho da altura da imagem */
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
 }
 
 .card h2 { 
-    background: none; /* Deixa sem fundo o título */
+    background: none;
     transform: scale(0.8);
-    text-align: center; /* Alinha o texto do título ao centro */
-    color: white; /* Cor da fonte do título */
+    text-align: center;
+    color: white;
 }
 
 .card .descricao {
-    display: none; /* Esconde o texto inicialmente */
+    display: none;
     margin-top: 10px;
     color: #ffffff;
     font-size: 14px;
@@ -195,13 +132,11 @@ header li:hover {
 }
 
 .card:hover .descricao {
-    display: block; /* Mostra o texto ao passar o mouse */
+    display: block;
     max-width: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     text-align: justify;
     font-size: 18px;
-
 }
 
 footer {
@@ -245,7 +180,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: gold;
+    color: #ccc;
     transform: scale(1.05);
 }
 
