@@ -54,43 +54,17 @@ header li {
 }
 
 header li:hover {
-    transform: scale(0.94);
-    background-color: rgba(255, 255, 255, 0.178);
-
-}
-
-.busca input {
-    height: 40px;
-    width: 100%;
-    border-radius: 30px;
-    padding-left: 4px;
-
-}
-
-.busca input:hover {
-    box-shadow: 0px 0px 10px #fff; /* Define o contorno do texto */
-
-}
-
-.busca input[type="text"] {
-    font-size: 16px;
+    transform: scale(0.99);
+    color: gold;
 }
 
 #sobre {
-    background-color:#3b3b3b;
+    background-image:url(https://th.bing.com/th/id/R.29c3a1cf578d36b52bb0e5d6e75a12be?rik=ogrUmqBZBz6ovA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f3D70Lvg.png&ehk=UG0gWwpkHvO%2bZYuTLABVQhiPCFvkgFkMraj%2fvgIZlNM%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
     padding: 2x;
     padding-bottom: 10px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px white;
-}
-
-#sobre img {
-    margin: 20px;
-    border-radius: 100px;
-    height: 150px;
-    width: 150px;
-    border: solid 1px black;
     box-shadow: 1px 1px 10px white;
 }
 
@@ -106,23 +80,20 @@ header li:hover {
     gap: 20px;
 }
 
-.div1 img {
-    margin: 10px;
-    border-radius: 100px;
-}
-
 .div2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    padding-left: 15px;
 }
 
 .div2 h1{
-    text-decoration: underline;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 20px black;
     color: #ffff;
     font-size: 22px;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .div2 a{
@@ -131,9 +102,13 @@ header li:hover {
     color: white;
     transition: 0.5s;
     margin-bottom: 5px;
+    padding-left: 15px;
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
     .div2 a {
         text-align: center;
     }
@@ -152,12 +127,12 @@ header li:hover {
     }
 }
 .div2 a:hover {
+    color: gold;
     transform: scale(0.95);
 }
 
 #projetos {
-    background-color:#8f8f8f;
-    padding: 2x;
+    padding: 15px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px white;
@@ -165,6 +140,7 @@ header li:hover {
 
 .titulo-projetos {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     text-decoration: underline;
     text-shadow: 1px 1px 10px black;
@@ -182,13 +158,14 @@ header li:hover {
 .card { 
     border-radius: 10px; /* Arredonda os cantos dos cards */
     padding: 5px; /* Espaçamento interno dos cards */
-    background-color: #333333; /* Fundo dos cards */
+    background-color: #181717; /* Fundo dos cards */
     transition: 0.8s; /* Efeito de transição ao passar o mouse */
+    max-width: 160px;
     text-align: center;
 }
 
 .card:hover { 
-
+    box-shadow: 0 0 10px gold;
     transform: scale(0.97); /* Reduz o tamanho do card ao passar o mouse */
 }
 
@@ -268,7 +245,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ccc;
+    color: gold;
     transform: scale(1.05);
 }
 
