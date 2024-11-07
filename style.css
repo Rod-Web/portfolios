@@ -6,12 +6,11 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 .container1 {
     padding: 19%;
-    height: 24vh;
+    height: 35vh;
     background-image: url(https://img.freepik.com/fotos-premium/fundo-preto-texturizado_926199-8526.jpg);
     background-size: cover;
     box-shadow: 0 0 10px white;
@@ -74,6 +73,7 @@ h1 {
 }
 .div2 a:hover {
     transform: scale(0.95);
+    color: gold;
 }
 
 .container3 {
@@ -102,8 +102,9 @@ h1 {
 }
 
 .card:hover { 
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 20px gold;
     transform: scale(0.97);
+    opacity: 0.8;
 }
 
 .card a {
@@ -118,25 +119,19 @@ h1 {
 
 .card h2 { 
     background: none;
-    transform: scale(0.8);
+    font-size: 17px;
     text-align: center;
     color: white;
 }
 
 .card .descricao {
-    display: none;
     margin-top: 10px;
     color: #ffffff;
-    font-size: 14px;
-    transition: 0.7s;
-}
-
-.card:hover .descricao {
-    display: block;
-    max-width: 200px;
-    padding: 10px;
     text-align: justify;
-    font-size: 18px;
+    transition: 0.7s;
+    padding: 10px;
+    font-size: 16px;
+
 }
 
 footer {
@@ -180,7 +175,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ccc;
+    color: gold;
     transform: scale(1.05);
 }
 
